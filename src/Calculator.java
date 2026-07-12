@@ -25,7 +25,7 @@ public class Calculator {
             break;
             case '%' : System.out.println("Result = "+(num1 % num2));
             break;
-            default: System.out.println("Invald Operator");
+            default: System.out.println("Invalid Operator");
         }
         sc.close();
     }
