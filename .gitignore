@@ -30,3 +30,38 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Build Tools ###
+target/
+build/
+
+### Installer Files ###
+*.msi
+*.exe
+*.zip
+*.rar
+*.7z
+
+### Log Files ###
+*.log
+
+### Temporary Files ###
+*.tmp
+*.temp
+
+### Environment Files ###
+.env
+.env.*
+
+### Maven ###
+.mvn/wrapper/maven-wrapper.jar
