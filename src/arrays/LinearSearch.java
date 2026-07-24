@@ -19,12 +19,11 @@ public class LinearSearch {
             if (num[i]==target){
                 found = true;
                 System.out.println(target+" is found at index "+i);
-                break;
             }
             }
         if (!found){
             System.out.println(target+" is not found at any index.");
-            sc.nextInt();
+            return;
         }
 
 
