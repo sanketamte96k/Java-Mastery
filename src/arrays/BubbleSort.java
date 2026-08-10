@@ -10,13 +10,20 @@ public class BubbleSort {
         }
 
         for (int i=0; i< num.length -1; i++){
+
+            boolean swap = false;
             for (int j=0; j<num.length-1-i; j++){
 
                 if (num[j] > num[j + 1]) {
                     int temp = num[j];
                     num[j] = num[j + 1];
                     num[j + 1] = temp;
+
+                    swap = true;
                 }
+            }
+            if (!swap){
+                break;
             }
         }
         System.out.print("Sorted Element =");
