@@ -1,11 +1,11 @@
 package method;
 
 public class MethodBasic {
-    static void greet(){
-        System.out.println("Welcome Sanket Amte");
+    static void showNumber(){
+        System.out.println(100);
     }
     public static void main(String[] args){
-        greet();
+        showNumber();
     }
 
 }
