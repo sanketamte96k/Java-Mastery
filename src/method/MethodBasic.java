@@ -1,11 +1,13 @@
 package method;
 
 public class MethodBasic {
-    static void showNumber(){
-        System.out.println(100);
+    static void studentInfo(){
+        System.out.println("Name = Sanket");
+        System.out.println("Course = B.Tech");
+        System.out.println("Lang = JAVA");
     }
     public static void main(String[] args){
-        showNumber();
+        studentInfo();
     }
 
 }
