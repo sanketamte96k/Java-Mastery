@@ -2,13 +2,13 @@ package method;
 
 public class MethodReturn {
 
-    static int calculatesum(int a, int b) {
-        return a + b;
+    static int square(int n) {
+        return n * n;
     }
 
     public static void main(String[] args) {
-        int sum = calculatesum(10, 20);
+        int square = square(7);
 
-        System.out.println(sum);
+        System.out.println("Square = "+square);
     }
 }
