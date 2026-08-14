@@ -2,13 +2,13 @@ package method;
 
 public class MethodReturn {
 
-    static int getAge() {
-        return 21;
+    static int calculatesum() {
+        return 10 + 30;
     }
 
     public static void main(String[] args) {
-        int Age = getAge();
+        int sum = calculatesum();
 
-        System.out.println("Age = " + Age);
+        System.out.println("Sum = " + calculatesum());
     }
 }
