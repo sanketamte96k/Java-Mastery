@@ -1,18 +1,17 @@
 package method;
 
 public class MethodArray {
-    static int findLargest(int[] arr ) {
-        int largest = arr[0];
+    static int findSmallest(int[] arr ) {
+        int smallest = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > largest)
-                largest = arr[i];
+            if (arr[i] < smallest)
+                smallest = arr[i];
         }
-        System.out.print(largest);
-        return largest;
+        return smallest;
     }
     public static void main(String[] args){
         int[] result = {2,6,1,9,5,3};
-        int Largest = findLargest(result);
-        System.out.println("Largest = "+Largest);
+        int Largest = findSmallest(result);
+        System.out.println("Smallest = "+Largest);
     }
 }
