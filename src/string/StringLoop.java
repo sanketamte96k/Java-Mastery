@@ -2,9 +2,11 @@ package string;
 
 public class StringLoop {
     public static void main(String[] args){
-        String Name1 = "Sanket";
+        String Name1 = "Sanket Amte";
 
-        System.out.println(Name1.substring(2,4));
+        int index = Name1.indexOf("Amte");
+
+        System.out.println("Amte found at index "+index);
         }
     }
 
