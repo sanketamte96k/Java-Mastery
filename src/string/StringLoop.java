@@ -2,10 +2,10 @@ package string;
 
 public class StringLoop {
     public static void main(String[] args){
-        String Name = "Sanket";
+        String Name1 = "Sanket";
+        String Name2 = "SankeT";
 
-        for (int i=0; i< Name.length(); i++){
-            System.out.println(Name.charAt(i));
+        System.out.println(Name1.equalsIgnoreCase(Name2));
         }
     }
-}
+
