@@ -2,10 +2,12 @@ package string;
 
 public class StringBuilderBasic {
     public static void main(String[] args){
-        java.lang.StringBuilder sb = new java.lang.StringBuilder();
+        StringBuilder sb = new StringBuilder("Java");
 
-        sb.append("Java");
+        sb.reverse();
+        sb.append(" ");
+        sb.insert(5,"Programming");
 
-        System.out.println(sb.reverse());
+        System.out.println(sb);
     }
 }
