@@ -7,6 +7,6 @@ public class CaseString {
 
         String name= "Sanket Amte";
 
-        System.out.println(name.toUpperCase());
+        System.out.println(name.replace("Amte","Patil"));
     }
 }
