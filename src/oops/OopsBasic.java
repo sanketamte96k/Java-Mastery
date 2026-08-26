@@ -13,12 +13,7 @@ public class OopsBasic {
         s2.age = 20;
         s2.marks = 90.90;
 
-        System.out.println(s1.name);
-        System.out.println(s1.age);
-        System.out.println(s1.marks);
-
-        System.out.println(s2.name);
-        System.out.println(s2.age);
-        System.out.println(s2.marks);
+        s1.displayInfo();
+        s2.displayInfo();
     }
 }
