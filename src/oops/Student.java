@@ -2,7 +2,7 @@ package oops;
 
 public class Student {
 
-        String name;
+       private String name;
         int age;
         double marks;
       // ------use Method-----
@@ -12,8 +12,19 @@ public class Student {
         System.out.println("Marks = " + marks);
     }
 //    ------Use Constructor ----
-    Student() {
-        System.out.println("Student object created");
+    Student(String name, int age, double marks) {
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+
+        studentCount++;
     }
+    static void showStudentCount() {
+        System.out.println("Total Students = " + studentCount);
+    }
+    void showName(){
+        System.out.println(this.name);
+    }
+    static int studentCount = 0;
 
 }
