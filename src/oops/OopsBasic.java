@@ -7,7 +7,7 @@ public class OopsBasic {
         Student s3 = new Student("Ram",19,91.90);
 
         Student.showStudentCount();
-        s1.name = "Pranav";
+        s1.name = "Pany";
 
         s1.displayInfo();
         s2.displayInfo();
