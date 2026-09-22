@@ -7,7 +7,7 @@ public class BankAccount {
 
         b1.displayBalance();
         b2.displayBalance();
-        System.out.println(Account.bankName);
+        Account.showBankName();
     }
 }
 class Account{
@@ -31,5 +31,8 @@ class Account{
         }
         void displayBalance () {
             System.out.println("Balance = " + balance);
+        }
+        static void showBankName(){
+            System.out.println(Account.bankName);
         }
     }
