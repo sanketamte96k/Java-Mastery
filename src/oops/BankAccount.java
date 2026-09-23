@@ -5,16 +5,15 @@ public class BankAccount {
         Account b1 = new Account("Sanket",768,500);
         Account b2 = new Account("Rohan",657,600);
 
+        b1.deposit(400);
         b1.displayBalance();
-        b2.displayBalance();
-        Account.showBankName();
     }
 }
 class Account{
     static String bankName = "HDFC Bank";
-    String accountHolder;
-    int accountNumber;
-    double balance;
+    private String accountHolder;
+    private int accountNumber;
+    private double balance;
 
     // use constructor
     Account(String accountHolder, int accountNumber, double balance) {
@@ -23,8 +22,10 @@ class Account{
         this.balance = balance;
     }
 
-        void deposit () {
-            System.out.println("Money Added sucessfully ");
+        public void deposit (double amount) {
+           if (amount > 0){
+               balance = balance + amount;
+           }
         }
         void withdraw () {
             System.out.println("Money Withdraw done");
