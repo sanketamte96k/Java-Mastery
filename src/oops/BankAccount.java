@@ -6,6 +6,7 @@ public class BankAccount {
         Account b2 = new Account("Rohan",657,600);
 
         b1.deposit(400);
+        b1.withdraw(1000);
         b1.displayBalance();
     }
 }
@@ -27,8 +28,10 @@ class Account{
                balance = balance + amount;
            }
         }
-        void withdraw () {
-            System.out.println("Money Withdraw done");
+        public void withdraw (double amount) {
+            if (amount > 0 && amount <= balance){
+                balance = balance - amount;
+            }
         }
         void displayBalance () {
             System.out.println("Balance = " + balance);
