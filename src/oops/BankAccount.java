@@ -5,9 +5,9 @@ public class BankAccount {
         Account b1 = new Account("Sanket",768,500);
         Account b2 = new Account("Rohan",657,600);
 
-        b1.deposit(400);
-        b1.withdraw(1000);
-        b1.displayBalance();
+        b1.deposit(600);
+        b1.withdraw(100);
+        System.out.println("Current Balance = "+ b1.getBalance());
     }
 }
 class Account{
@@ -38,5 +38,8 @@ class Account{
         }
         static void showBankName(){
             System.out.println(Account.bankName);
+        }
+        public double getBalance(){
+        return balance;
         }
     }
