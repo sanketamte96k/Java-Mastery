@@ -24,7 +24,7 @@ class Account{
     }
 
         void deposit () {
-            System.out.println("Money Added");
+            System.out.println("Money Added sucessfully ");
         }
         void withdraw () {
             System.out.println("Money Withdraw done");
