@@ -7,7 +7,8 @@ public class BankAccount {
 
         b1.deposit(600);
         b1.withdraw(100);
-        System.out.println("Current Balance = "+ b1.getBalance());
+        b1.setBalance(5000);
+        b1.displayBalance();
     }
 }
 class Account{
@@ -41,5 +42,13 @@ class Account{
         }
         public double getBalance(){
         return balance;
+        }
+        public void setBalance(double balance){
+        if (balance >=0){
+            this.balance = balance;
+        }
+        else {
+            System.out.println("Invalid Balance");
+        }
         }
     }
