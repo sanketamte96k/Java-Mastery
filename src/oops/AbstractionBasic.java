@@ -5,12 +5,17 @@ public class AbstractionBasic {
         PaymentMethod p1 = new UPIPayment();
         PaymentMethod p2 = new CreditCard();
         p1.pay();
+        p2.ShowMessage();
         p1.pay();
 
     }
 }
 abstract class PaymentMethod {
     abstract void pay();
+
+    void ShowMessage(){
+        System.out.println("Payment Processing.......");
+    }
 }
 class UPIPayment extends PaymentMethod{
     void pay(){
