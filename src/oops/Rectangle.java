@@ -31,8 +31,8 @@ class DemoRectangle{
             this.width = width;
         }else {
             System.out.println("Invalid Dimension");
-            this.length = length;
-            this.width = width;
+            this.length = 1;
+            this.width = 1;
         }
     }
     void calculateArea(){
