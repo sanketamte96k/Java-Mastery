@@ -6,7 +6,6 @@ public class DemoEmployee {
         FirstEmployee e2 = new FirstEmployee("Rohan",2105,60000);
         e1.displayInfo();
         e2.displayInfo();
-        System.out.println(e1.getSalary());
         e1.increasesSalay(10);
         e2.increasesSalay(-5);
 
