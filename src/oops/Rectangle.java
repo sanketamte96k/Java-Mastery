@@ -8,6 +8,7 @@ public class Rectangle {
         d2.displayInfo();
         d2.calculateArea();
         d2.calculatePeriMeter();
+        d2.calculateArea(3,5);
 
     }
 }
@@ -37,6 +38,10 @@ class DemoRectangle{
     }
     void calculateArea(){
         double Area = (length * width);
+        System.out.println("Area = "+Area);
+    }
+    void calculateArea(int length, int width){
+        int Area = (length * width);
         System.out.println("Area = "+Area);
     }
     void calculatePeriMeter(){
