@@ -10,21 +10,21 @@ public class BankAccountSystem {
 
         CurrentAccount a3 = new CurrentAccount("Rohan", 15000, 5000);
 
-        System.out.println("----- Normal Account -----");
+        System.out.println("Normal Account");
         a1.displayInfo();
         a1.deposite(2000);
         a1.withdraw(3000);
 
         System.out.println();
 
-        System.out.println("----- Saving Account -----");
+        System.out.println("Saving Account");
         a2.displayInfo();
         a2.addInterest();
         a2.displayInfo();
 
         System.out.println();
 
-        System.out.println("----- Current Account -----");
+        System.out.println("Current Account");
         a3.displayInfo();
         a3.withdraw(18000);
         a3.displayInfo();
@@ -95,8 +95,6 @@ class SavingAccount extends Accountt {
         double interest = getBalance() * interestRate / 100;
 
         System.out.println("Interest = " + interest);
-
-        // Use parent's public behavior to modify private balance
         deposite(interest);
     }
 }
@@ -128,8 +126,6 @@ class CurrentAccount extends Accountt {
             } else {
 
                 double remaining = amount - getBalance();
-
-                // Bring normal balance to zero
                 super.withdraw(getBalance());
 
                 System.out.println("Overdraft Used = " + remaining);
