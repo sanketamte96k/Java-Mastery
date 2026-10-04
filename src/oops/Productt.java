@@ -7,8 +7,10 @@ public class Productt {
                 new Cloths("T-Shirt",400,"L")
         };
         for (Items i : products){
-            i.displayInfo();
-            System.out.println("Discount = "+ i.calculateDiscount());
+            if (i instanceof Cloths) {
+                i.displayInfo();
+                System.out.println("Discount = " + i.calculateDiscount());
+            }
         }
     }
 }
