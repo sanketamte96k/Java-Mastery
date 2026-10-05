@@ -10,15 +10,25 @@ public class ThrowsPractice {
 
         System.out.println("You are eligible");
     }
+    public static void divide(int a, int b) throws Exception{
+        if (b == 0){
+            throw new Exception("Can not Divided by Zero");
+        }else {
+            int result = a / b;
+            System.out.println("Result = "+result);
+        }
+
+    }
 
     public static void main(String[] args) {
 
         try {
-            checkAge(15);
+            divide(10,0);
         }
         catch (Exception e) {
             System.out.println("Exception handled");
         }
+
 
     }
 }
