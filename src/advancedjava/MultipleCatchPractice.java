@@ -4,10 +4,8 @@ public class MultipleCatchPractice {
     public static void main(String[] args){
         int[] numbers = {10,20,30,40,50,60};
         System.out.println("Start Program Execution");
-
         try {
-            int result = 10/0;
-            System.out.println("Result = "+result);
+            System.out.println(numbers[6]);
         }
         catch (ArithmeticException e){
             System.out.println("Can not divided by zero");
