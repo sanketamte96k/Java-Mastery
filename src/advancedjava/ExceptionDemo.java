@@ -2,6 +2,7 @@ package advancedjava;
 
 public class ExceptionDemo {
     public static void main(String[] args) {
+        System.out.println("Start Program Execution ");
 
         int a = 20;
         int b = 0;
