@@ -1,4 +1,4 @@
-package advancedjava;
+package exceptionhandling;
 
 public class ThrowsPractice {
 

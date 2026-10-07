@@ -1,4 +1,4 @@
-package advancedjava;
+package exceptionhandling;
 
 public class CustomExceptionPractice {
     public static void checkAge(int age) throws InvalidAgeException {

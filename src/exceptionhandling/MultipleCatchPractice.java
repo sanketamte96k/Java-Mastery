@@ -1,4 +1,4 @@
-package advancedjava;
+package exceptionhandling;
 
 public class MultipleCatchPractice {
     public static void main(String[] args){

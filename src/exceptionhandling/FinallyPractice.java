@@ -1,20 +1,17 @@
-package advancedjava;
+package exceptionhandling;
 
-public class CheckedUncheckedPractice {
+public class FinallyPractice {
     public static void main(String[] args){
-        int a =10;
-        int b = 0;
-
-        System.out.println("Program Start Running");
+        System.out.println("Program Start Execution");
         try{
-            int result = a / b;
+            int result = 10 / 2;
             System.out.println("Result = "+result);
         }
         catch (ArithmeticException e){
             System.out.println("Can not divided by zero");
         }
         finally {
-            System.out.println("Program Execution Done");
+            System.out.println("Program Execution Completed");
         }
     }
 }

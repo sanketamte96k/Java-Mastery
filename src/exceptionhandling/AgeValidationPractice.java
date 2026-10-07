@@ -1,4 +1,4 @@
-package advancedjava;
+package exceptionhandling;
 
 class InvalidAgeExceptionn extends Exception{
     InvalidAgeExceptionn(String message){

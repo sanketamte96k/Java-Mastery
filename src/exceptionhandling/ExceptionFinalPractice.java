@@ -1,4 +1,4 @@
-package advancedjava;
+package exceptionhandling;
 
 class InsufficientBalanceExceptionn extends Exception {
     public InsufficientBalanceExceptionn(String message) {
