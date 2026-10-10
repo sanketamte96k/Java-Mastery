@@ -1,9 +1,8 @@
 package collectionframwork;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 public class HashSetBasicPractice {
     public static void main(String[] args){
-        HashSet<Integer> marks = new HashSet<>();
+        LinkedHashSet<Integer> marks = new LinkedHashSet<>();
         marks.add(10);
         marks.add(20);
         marks.add(30);
