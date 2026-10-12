@@ -15,5 +15,13 @@ public class HashMapBasicPractice {
         System.out.println(student.put(102,"Sahil"));
         System.out.println(student);
         System.out.println(student.containsKey(103));
+        System.out.println(student.isEmpty());
+        System.out.println(student.containsValue("Sahil"));
+
+        for (var entry : student.entrySet()) {
+            System.out.println(
+                    entry.getKey() + " --> " + entry.getValue()
+            );
+        }
     }
 }
