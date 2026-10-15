@@ -10,12 +10,13 @@ public class MapTypesPractice {
         student.put(103,"Rahul");
         student.put(101,"Sanket");
         student.put(102,"Sahil");
+        student.put(105,"Sunil");
 
-        System.out.println(student);
-        System.out.println(student.keySet());
-        System.out.println(student.values());
-        System.out.println(student.entrySet());
-        System.out.println();
+        System.out.println(student.size());
+        System.out.println(student.remove(103));
+        System.out.println(student.size());
+        student.clear();
+        System.out.println(student.isEmpty());
 
         System.out.println("TreeMap Starting");
 
