@@ -20,4 +20,4 @@ This repository contains all my Java programs, exercises, mini projects, and DSA
 - Mini Projects
 
 ## Goal
-Become a Java Full Stack Backend Developer.
+Become a Java Full Stack Developer.
