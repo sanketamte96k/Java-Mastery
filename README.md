@@ -59,12 +59,6 @@ The focus is on **understanding concepts through implementation**, rather than s
 
 ---
 
-## 🎯 Current Direction
-
-**Java → DSA → SQL/DBMS → Spring Boot → REST APIs → Java Full Stack Development**
-
----
-
 ## 👨‍💻 Author
 
 **Sanket Amte**
