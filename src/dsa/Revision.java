@@ -3,13 +3,23 @@ package dsa;
 public class Revision {
     public static void main(String[] args) {
 
-     String name = "SANKET";
+     String name = "MADAM";
+     boolean isPalindrame = false;
 
      String rev = "";
 
-     for (int i=name.length()-1; i>=0; i--){
+     for (int i=name.length()-1; i>=0; i--) {
          rev = rev + name.charAt(i);
+
+         if (rev.equals(name)) {
+             isPalindrame = true;
+         }
      }
-        System.out.println(rev);
+         if (isPalindrame) {
+             System.out.println(name+" is Palindrome");
+         }
+         else {
+             System.out.println(name+" is not a Palindrome");
+         }
     }
 }
