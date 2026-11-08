@@ -3,23 +3,23 @@ package dsa;
 public class Revision {
     public static void main(String[] args) {
 
-     String name = "MADAM";
-     boolean isPalindrame = false;
+     String name = "Sanket";
 
-     String rev = "";
+     int vowel = 0;
+     int consonants = 0;
 
-     for (int i=name.length()-1; i>=0; i--) {
-         rev = rev + name.charAt(i);
+     for (int i=0; i< name.length(); i++){
 
-         if (rev.equals(name)) {
-             isPalindrame = true;
-         }
-     }
-         if (isPalindrame) {
-             System.out.println(name+" is Palindrome");
+         char ch = Character.toLowerCase(name.charAt(i));
+
+         if (ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+             vowel++;
          }
          else {
-             System.out.println(name+" is not a Palindrome");
+             consonants++;
          }
+     }
+        System.out.println("Vowels = "+vowel);
+        System.out.println("Consonants = "+consonants);
     }
 }
