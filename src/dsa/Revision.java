@@ -1,13 +1,16 @@
 package dsa;
+
+import java.sql.SQLOutput;
+
 public class Revision {
     public static void main(String[] args) {
 
-      String name = "PROGRAMMING";
+      String name = "COMPUTER";
 
-        System.out.println(name.length());
-        System.out.println(name.charAt(0));
-        System.out.println(name.charAt(name.length()-1));
-        System.out.println(name.charAt(4));
+        System.out.println(name.substring(2,5));
+        System.out.println(name.substring(4));
+
+
 
     }
 }
