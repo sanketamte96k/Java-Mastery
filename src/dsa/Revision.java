@@ -3,23 +3,16 @@ package dsa;
 public class Revision {
     public static void main(String[] args) {
 
-     String name = "Sanket";
+     String name = "PROGRAMMING";
+     int count =0;
+     int target = 'G';
 
-     int vowel = 0;
-     int consonants = 0;
-
-     for (int i=0; i< name.length(); i++){
-
-         char ch = Character.toLowerCase(name.charAt(i));
-
-         if (ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
-             vowel++;
-         }
-         else {
-             consonants++;
+     for (int i=0; i<name.length();i++){
+         if (name.charAt(i)==target){
+             count++;
          }
      }
-        System.out.println("Vowels = "+vowel);
-        System.out.println("Consonants = "+consonants);
+        System.out.println(target+" Occurs "+count+" times");
+
     }
 }
