@@ -3,16 +3,15 @@ package dsa;
 public class Revision {
     public static void main(String[] args) {
 
-     String name = "PROGRAMMING";
-     int count =0;
-     int target = 'G';
+    String name = "Hello My self Sanket Amte";
 
-     for (int i=0; i<name.length();i++){
-         if (name.charAt(i)==target){
-             count++;
-         }
-     }
-        System.out.println(target+" Occurs "+count+" times");
+    String result = "";
 
+    for (int i=0; i<name.length();i++){
+        if (name.charAt(i)!=' '){
+            result = result + name.charAt(i);
+        }
+    }
+        System.out.println(result);
     }
 }
